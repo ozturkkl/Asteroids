@@ -47,18 +47,10 @@ function create()
     cursors = game.input.keyboard.createCursorKeys();
 
     game.input.keyboard.addKey(Phaser.Keyboard.ENTER).onDown.add(startNewGame, this);
-    //game.input.onDown.add(startNewGame, this);
 
     stars = create_stars();
     score = 0;
     scoreLabel = game.add.text(20, 20, `Score: ${score}`, {font: "30px Arial", fill: "#fff" });
-
-
-    // INPUT FIELD CODE ---- MORE CODE BELOW AND ALSO IN index.html
-    // myInput = createInput(game.world.centerX, 50);
-    // myInput.anchor.set(0.5, 0.5);
-    // myInput.canvasInput.value('Hello!');
-    // myInput.canvasInput.focus();
 }
 
 function update()
@@ -236,40 +228,3 @@ function startNewGame(){
         gameStarted = true;
     }
 }
-
-
-// INPUT CODE EXPERIMENT, CANT GET IT TO WORK
-
-//var myInput;
-
-// function  inputFocus(sprite){
-//     sprite.canvasInput.focus();
-// }
-
-// function createInput(x, y){
-//     var bmd = game.add.bitmapData(400, 50);    
-//     var myInput = game.add.sprite(x, y, bmd);
-    
-//     myInput.canvasInput = new CanvasInput({
-//       canvas: bmd.canvas,
-//       fontSize: 30,
-//       fontFamily: 'Arial',
-//       fontColor: '#222',
-//       fontWeight: 'bold',
-//       width: 400,
-//       padding: 8,
-//       borderWidth: 1,
-//       borderColor: '#000',
-//       borderRadius: 3,
-//       boxShadow: '1px 1px 0px #fff',
-//       innerShadow: '0px 0px 5px rgba(0, 0, 0, 0.5)',
-//       placeHolder: 'Enter name here...'
-//     });
-//     myInput.inputEnabled = true;
-//     myInput.input.useHandCursor = true;    
-//     myInput.events.onInputUp.add(inputFocus, this);
-    
-//     return myInput;
-// }
-
-  
