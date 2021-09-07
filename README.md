@@ -1,5 +1,7 @@
 # Galactic Travel
-Little game created with JavaScript. Fun factor is questionable, I promise it gets harder as time goes on.
+Little game made with JavaScript. Fun factor is questionable...
+
+Game was made with phaser.js. It gets gradually harder as you play. Let me know your high score if you played it. It might become impossible to beat really quick, sorry about that.
 
 - No, you can't shoot the rocks, thanks for asking :d
 
